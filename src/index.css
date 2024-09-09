@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav{
+    z-index: 1000;
+}
+.row{
+    @apply flex flex-wrap px-4 justify-center items-center;
+}
+.btn{
+    @apply my-2 px-4 py-2 w-full rounded-lg bg-green-600 hover:bg-emerald-600 text-white font-bold 
+}
+.button{
+  @apply my-2 px-4 py-2 w-full rounded-lg bg-white hover:bg-emerald-100 text-white font-bold border-green-600
+}
+.contain .product .addBtn {
+  opacity: 0 !important;
+  transform: translateY(100%) !important;
+  transition: transform 1s, opacity 1s !important;
+}
+
+.contain .product:hover .addBtn {
+  opacity: 1 !important;
+  transform: translateY(0%) !important;
+}
+
+
+
+.categoryImg {
+    
+    height: 140px; /* Ensures the image maintains its aspect ratio */
+    max-height: 200px; /* Adjust this as needed */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+  }
+  
+  @media (min-width: 768px) {
+    .categoryImg {
+      height: 300px; /* Adjust height for larger screens */
+    }
+  }
+  
