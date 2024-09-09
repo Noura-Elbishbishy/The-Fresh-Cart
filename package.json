@@ -2,8 +2,8 @@
   "name": "thecart",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://noura-elbishbishy.github.io/The-Fresh-Cart/",
-  "type": "module",
+ "homepage": "https://noura-elbishbishy.github.io/The-Fresh-Cart/",
+ "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -29,7 +29,7 @@ import Checkout from './assets/Components/Checkout/Checkout.jsx';
 let query = new QueryClient();
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {path: '', element: <Layout/>, children: [
     { path: 'login', element:  <Login/>  },
     { index: true, path : 'register' , element: <Register/>},
