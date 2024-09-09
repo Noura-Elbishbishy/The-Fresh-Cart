@@ -25,7 +25,6 @@ import {Toaster} from 'react-hot-toast'
 import Brands from './assets/Components/Brands/Brands.jsx';
 import WishList from './assets/Components/WishList/WishList.jsx';
 import Checkout from './assets/Components/Checkout/Checkout.jsx';
-import AllOrders from './assets/Components/AllOrders/AllOrders.jsx';
 
 let query = new QueryClient();
 
@@ -45,8 +44,7 @@ const router = createBrowserRouter([
       { path: 'wishlist', element: <ProtectedRoute><WishList /></ProtectedRoute> },
       { path: 'productdetails/:id/:category', element:<ProtectedRoute>  <ProductDetails/> </ProtectedRoute>},
       { path: 'checkout', element: <ProtectedRoute><Checkout /></ProtectedRoute> },
-      { path: 'allorders', element: <ProtectedRoute><AllOrders /></ProtectedRoute> },
-
+     
      
       { path: '*', element: <NotFound/> },
     ],
